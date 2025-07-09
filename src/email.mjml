@@ -1,0 +1,45 @@
+<mjml>
+  <mj-head>
+    <mj-attributes>
+      <mj-text
+        font-family="Arial, sans-serif"
+        font-size="16px"
+        color="#333333"
+      />
+      <mj-button
+        background-color="#f45e43"
+        color="white"
+        font-size="16px"
+        border-radius="4px"
+      />
+      <mj-all padding="0px" />
+    </mj-attributes>
+
+    <mj-style inline="inline">
+      .desktop { display: none; } .mobile { mso-hide: all !important; }
+    </mj-style>
+    <mj-style>
+      @media only screen and (min-width:480px) { .desktop { display: block
+      !important; } .mobile { display: none !important; mso-hide: all
+      !important; } }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="white">
+    <mj-section>
+      <mj-column>
+        <mj-text> Bonjour {{name}}, </mj-text>
+        <mj-text css-class="desktop">Ceci est un message sur desktop</mj-text>
+        <mj-raw>
+          <!--[if !mso]><!-->
+        </mj-raw>
+        <mj-text css-class="mobile">Ceci est un message sur mobile</mj-text>
+        <mj-raw>
+          <!--<![endif]-->
+        </mj-raw>
+
+        <mj-button href="{{cta_link}}">Je participe</mj-button>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

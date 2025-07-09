@@ -1,0 +1,13 @@
+{
+  "name": "mjml-email-starter",
+  "version": "1.0.0",
+  "description": "Starter MJML avec génération de variantes via Handlebars",
+  "main": "build.js",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.8",
+    "mjml": "^4.15.3"
+  }
+}
